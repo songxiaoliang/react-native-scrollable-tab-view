@@ -104,7 +104,6 @@ const styles = StyleSheet.create({
     width: pxToDp(1),
     height: pxToDp(48),
     backgroundColor: '#CCCCCC',
-
   }
 });
 
