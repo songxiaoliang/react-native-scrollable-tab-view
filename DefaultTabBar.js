@@ -39,7 +39,7 @@ const DefaultTabBar = React.createClass({
     const fontWeight = isTabActive ? 'bold' : 'normal';
 
     return <Button
-      style={styles.flexOne}
+      style={{flex: 1,flexDirection:'row',alignItems: 'center'}}
       key={name}
       accessible={true}
       accessibilityLabel={name}
@@ -48,9 +48,11 @@ const DefaultTabBar = React.createClass({
     >
       <View style={[styles.tab, this.props.tabStyle, ]}>
         <Text style={[{color: textColor, fontWeight, }, textStyle, ]}>
-          {name}
+          {name} 
         </Text>
+       
       </View>
+       <View style={ styles.spearator }/>
     </Button>;
   },
 
@@ -86,13 +88,10 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    paddingBottom: 10,
-  },
-  flexOne: {
-    flex: 1,
+    flexDirection: 'row',
   },
   tabs: {
-    height: 50,
+    height: 88,
     flexDirection: 'row',
     justifyContent: 'space-around',
     borderWidth: 1,
@@ -101,6 +100,12 @@ const styles = StyleSheet.create({
     borderRightWidth: 0,
     borderColor: '#ccc',
   },
+  spearator: {
+    width: pxToDp(1),
+    height: pxToDp(48),
+    backgroundColor: '#CCCCCC',
+
+  }
 });
 
 module.exports = DefaultTabBar;
