@@ -2,7 +2,7 @@
 ## react-native-scrollable-tab-view
 ### 基于原react-native-scrollable-tab-view库，对其进行扩展，添加tab间隔线。
 #### 效果图：
-
+<img src="http://oleeed73x.bkt.clouddn.com/4D08166E-5265-431A-A53C-414A7EAD9306.png">
 以下是原库介绍：
 
 This is probably my favorite navigation pattern on Android, I wish it
